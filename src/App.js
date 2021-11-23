@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <Header />
       <h1>Mathificent</h1>
+      <Footer />
     </div>
   );
 }
