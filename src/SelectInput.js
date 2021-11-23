@@ -2,7 +2,12 @@ import React from "react";
 
 function SelectInput () {
     return (
-        <div>SelectInput</div>
+        <div>
+            <label htmlFor="select">Select Label</label>
+            <select id="select">
+                <option value="sample value">Sample Value</option>
+            </select>
+        </div>
     )
 }
 
