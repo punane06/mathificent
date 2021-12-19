@@ -13,8 +13,22 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route exact path="/" component={Main} />
-      <Route path="/play" component={Game} />
+      <Route
+        exact
+        path="/"
+        component={() => (
+          <Main
+            operation={operation}
+            setOperation={setOperation}
+            maxNumber={maxNumber}
+            setMaxNumber={setMaxNumber}
+          />
+        )}
+      />
+      <Route
+        path="/play"
+        component={() => <Game operation={operation} maxNumber={maxNumber} />}
+      />
       <Footer />
     </div>
   );
